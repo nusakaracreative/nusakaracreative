@@ -29,6 +29,11 @@ jobs:
             cp -R /tmp/nusakara-assets/hunting assets/portfolio/
           fi
 
+      - name: Install ImageMagick
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y imagemagick
+
       - name: Generate responsive WebP variants
         run: |
           find . -type f -name "*.webp" ! -name "*-480.webp" ! -name "*-800.webp" ! -name "*-1200.webp" -print0 | while IFS= read -r -d '' file; do
