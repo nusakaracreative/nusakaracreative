@@ -8,7 +8,7 @@
 <style>
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
 :root{--ink:#0D2129;--deep:#033040;--orange:#FA3E0B;--red:#C6492B;--paper:#F4F2ED;--muted:#68777d;--line:rgba(13,33,41,.14);--max:1240px}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",Arial,sans-serif;line-height:1.55}a{text-decoration:none;color:inherit}.wrap{width:min(calc(100% - 48px),var(--max));margin:auto}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",Arial,sans-serif;line-height:1.55}a{text-decoration:none;color:inherit}.skip-link{position:fixed;left:14px;top:14px;z-index:200;transform:translateY(-150%);background:var(--ink);color:#fff;padding:10px 14px;border-radius:999px;font-size:11px;font-weight:700}.skip-link:focus{transform:none}.filter button:focus-visible,.photo:focus-visible,.back:focus-visible{outline:3px solid var(--orange);outline-offset:4px}.wrap{width:min(calc(100% - 48px),var(--max));margin:auto}
 header{border-bottom:1px solid var(--line);background:rgba(244,242,237,.92);position:sticky;top:0;z-index:10;backdrop-filter:blur(14px)}.nav{height:78px;display:flex;justify-content:space-between;align-items:center}.brand{display:flex;gap:10px;align-items:center;font:700 14px "Space Grotesk"}.mark{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:var(--ink);color:#fff}.brand small{font:500 10px "DM Sans";color:var(--muted)}.back{font-size:10px;font-weight:700;letter-spacing:.1em}
 main{padding-bottom:80px}.hero{padding:100px 0 70px;display:grid;grid-template-columns:1.1fr .9fr;gap:70px;align-items:end}.eyebrow,.kicker{font-size:10px;letter-spacing:.18em;font-weight:700;color:var(--orange)}h1,h2,h3{font-family:"Space Grotesk";letter-spacing:-.06em;line-height:.94;margin:0}h1{font-size:clamp(64px,9vw,125px);max-width:850px;margin-top:22px}.lede{font-size:18px;color:#526169;max-width:600px;margin:30px 0 0}.hero-note{border-left:3px solid var(--orange);padding-left:20px;color:var(--muted);font-size:13px}.stats{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);margin-top:55px}.stat{padding:20px 20px 0 0}.stat strong{font:700 38px "Space Grotesk";display:block}.stat span{font-size:10px;letter-spacing:.08em;color:var(--muted)}
 section{padding:75px 0}.section-head{display:flex;justify-content:space-between;gap:40px;align-items:end;margin-bottom:35px}.section-head h2{font-size:clamp(42px,5vw,68px);max-width:760px}.intro{max-width:380px;color:var(--muted);font-size:14px}
@@ -27,11 +27,23 @@ footer{background:var(--ink);color:#fff;padding:26px 0}.footer{display:flex;just
 .photo:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 58%,rgba(0,0,0,.58));opacity:.65;pointer-events:none}
 .photo span{position:absolute;left:16px;bottom:14px;font-size:8px;letter-spacing:.14em;font-weight:700;color:#fff;text-shadow:0 1px 8px #000;z-index:2}.photo.is-hidden{display:none}
 @media(max-width:900px){.gallery{grid-template-columns:repeat(6,minmax(0,1fr));gap:12px}.photo{grid-column:span 3}.photo:nth-child(7n+1),.photo:nth-child(7n+5){grid-column:span 4}.photo:nth-child(7n+3){grid-column:span 2}}
-@media(max-width:560px){.gallery{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:7px;gap:9px}.photo,.photo:nth-child(7n+1),.photo:nth-child(7n+5),.photo:nth-child(7n+3){grid-column:span 1}.photo:nth-child(5n+1){grid-column:span 2}} </style>
+@media(max-width:560px){.gallery{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:7px;gap:9px}.photo,.photo:nth-child(7n+1),.photo:nth-child(7n+5),.photo:nth-child(7n+3){grid-column:span 1}.photo:nth-child(5n+1){grid-column:span 2}} @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.photo img{transition:none}.photo:hover img{transform:none}}
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ImageGallery",
+  "name": "Portofolio Fotografi NUSAKARA CREATIVE",
+  "url": "https://nusakaracreative.github.io/nusakracreative/portfolio/",
+  "description": "Arsip fotografi NUSAKARA CREATIVE: Commercial, Food & Beverage, dan Hunting."
+}
+</script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Lewati ke konten utama</a>
 <header><div class="wrap nav"><a class="brand" href="../"><span class="mark">N</span><span>NUSAKARA <small>CREATIVE</small></span></a><a class="back" href="../">← KEMBALI KE BERANDA</a></div></header>
-<main>
+<main id="main-content">
 <section class="wrap hero">
 <div><div class="eyebrow">PORTOFOLIO / FOTOGRAFI</div><h1>ARSIP VISUAL NUSAKARA.</h1><p class="lede">Kumpulan pekerjaan fotografi NUSAKARA yang menampilkan tiga sisi pendekatan visual: Commercial, Food & Beverage, dan Hunting.</p><div class="stats"><div class="stat"><strong>46</strong><span>KARYA ONLINE</span></div><div class="stat"><strong>10</strong><span>COMMERCIAL</span></div><div class="stat"><strong>20 + 16</strong><span>F&amp;B + HUNTING</span></div></div></div>
 <div class="hero-note">Portofolio ini disusun dari arsip project foto NUSAKARA. Materi yang belum diunggah tidak ditampilkan sebagai placeholder agar halaman tetap bersih.</div>
