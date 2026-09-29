@@ -1,0 +1,36 @@
+name: Install portfolio assets
+
+on:
+  push:
+    paths:
+      - "NUSAKARA_PORTFOLIO_GITHUB_ASSETS.zip"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  install:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Extract portfolio assets
+        run: |
+          rm -rf /tmp/nusakara-assets
+          mkdir -p /tmp/nusakara-assets
+          unzip -q "NUSAKARA_PORTFOLIO_GITHUB_ASSETS.zip" -d /tmp/nusakara-assets
+          mkdir -p assets/portfolio
+          cp -R /tmp/nusakara-assets/commercial assets/portfolio/
+          cp -R /tmp/nusakara-assets/food-beverage assets/portfolio/
+          cp -R /tmp/nusakara-assets/hunting assets/portfolio/
+
+      - name: Commit portfolio assets
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/portfolio
+          git diff --cached --quiet && exit 0
+          git commit -m "Add NUSAKARA portfolio photo assets"
+          git push
