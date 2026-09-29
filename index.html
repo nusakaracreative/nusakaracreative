@@ -96,7 +96,7 @@
     .service h3{font-size:30px;letter-spacing:-.04em;margin-bottom:12px}.service p{color:var(--muted);font-size:14px;margin:0;max-width:520px}
     .work{background:var(--deep);color:white}
     .work .kicker{color:#ff7957}.work .section-intro{color:rgba(255,255,255,.62)}
-    .case{display:grid;grid-template-columns:1.1fr .9fr;min-height:430px;border:1px solid rgba(255,255,255,.18);border-radius:var(--radius);overflow:hidden}
+    .case{display:grid;color:inherit;transition:transform .25s ease, border-color .25s ease;cursor:pointer}.case:hover{transform:translateY(-4px);border-color:rgba(255,255,255,.42)}.case{display:grid;grid-template-columns:1.1fr .9fr;min-height:430px;border:1px solid rgba(255,255,255,.18);border-radius:var(--radius);overflow:hidden}
     .case-visual{position:relative;background:#102a34;display:grid;place-items:center;overflow:hidden}
     .case-visual:before{content:"";position:absolute;width:420px;height:420px;border-radius:50%;background:var(--orange);right:-120px;top:-130px}
     .case-visual:after{content:"JMC";position:relative;z-index:2;font:700 130px "Space Grotesk";letter-spacing:-.09em;transform:rotate(-8deg)}
@@ -182,13 +182,13 @@
   <section id="work" class="work">
     <div class="wrap">
       <div class="section-head"><div><div class="kicker">03 / SELECTED WORK</div><h2>Strategy becomes visible.</h2></div><p class="section-intro">A snapshot of how we connect brand thinking with digital execution.</p></div>
-      <article class="case">
+      <a class="case" href="work/jaya-mediacell/">
         <div class="case-visual"><div class="case-visual-label"></div></div>
         <div class="case-info">
           <div><div class="kicker">CASE STUDY / 001</div><h3>Jaya<br>Mediacell</h3><p>Building awareness and digital presence for a growing device repair business through social media strategy, content and execution.</p></div>
-          <div class="tags"><span class="tag">DIGITAL STRATEGY</span><span class="tag">SOCIAL MEDIA</span><span class="tag">CONTENT</span></div>
+          <div class="tags"><span class="tag">DIGITAL STRATEGY</span><span class="tag">SOCIAL MEDIA</span><span class="tag">CONTENT</span><span class="tag">VIEW CASE STUDY ↗</span></div>
         </div>
-      </article>
+      </a>
     </div>
   </section>
 
