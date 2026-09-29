@@ -18,6 +18,7 @@
 <meta name="twitter:description" content="Strategi, kreativitas, dan eksekusi digital untuk brand dan bisnis.">
 <meta name="twitter:image" content="https://nusakaracreative.github.io/nusakaracreative/13.webp">
 <meta name="theme-color" content="#f4f2ed">
+<meta name="format-detection" content="telephone=no">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
@@ -35,9 +36,9 @@ header{height:76px;position:fixed;inset:0 0 auto;z-index:20;background:rgba(244,
 .nav{height:76px;display:flex;align-items:center;justify-content:space-between}
 .logo{font:700 15px "Space Grotesk";letter-spacing:-.03em}.logo span{font:400 9px "DM Sans";letter-spacing:.14em;color:var(--muted);margin-left:7px}
 .nav-center{display:flex;gap:32px;font-size:10px;font-weight:700;letter-spacing:.13em}.nav-center a{color:#526168}.nav-center a:hover{color:var(--ink)}
-.nav-cta{font-size:10px;font-weight:700;letter-spacing:.13em;border-bottom:1px solid var(--ink);padding-bottom:5px}
+.nav-cta{font-size:10px;display:inline-flex;align-items:center;min-height:44px;font-weight:700;letter-spacing:.13em;border-bottom:1px solid var(--ink);padding-bottom:5px}
 .skip{position:fixed;left:14px;top:14px;z-index:100;transform:translateY(-150%);background:var(--ink);color:#fff;padding:10px;font-size:11px}.skip:focus{transform:none}
-.mobile-actions{display:none;gap:15px;align-items:center}.mobile-link{display:none;font-size:10px;font-weight:700;letter-spacing:.13em}
+.mobile-actions{display:none;gap:8px;align-items:center;align-items:center}.mobile-link{display:none;font-size:9px;padding:10px 8px;min-height:44px;align-items:center;font-weight:700;letter-spacing:.13em}
 .eyebrow{font-size:10px;font-weight:700;letter-spacing:.17em;color:var(--orange);text-transform:uppercase}
 h1,h2,h3{font-family:"Space Grotesk";margin:0;letter-spacing:-.065em;line-height:.92}
 .hero{padding:132px 0 88px}
@@ -46,11 +47,11 @@ h1,h2,h3{font-family:"Space Grotesk";margin:0;letter-spacing:-.065em;line-height
 .hero h1 span{display:block}
 .hero h1 .orange{color:var(--orange)}
 .hero-copy{max-width:550px;margin:32px 0 0;color:#536168;font-size:16px;line-height:1.75}
-.hero-actions{display:flex;gap:24px;align-items:center;margin-top:30px}
-.hero-actions a{font-size:10px;font-weight:700;letter-spacing:.13em;border-bottom:1px solid var(--ink);padding-bottom:6px}
+.hero-actions{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-top:30px}
+.hero-actions a{font-size:10px;min-height:44px;display:inline-flex;align-items:center;font-weight:700;letter-spacing:.13em;border-bottom:1px solid var(--ink);padding-bottom:6px}
 .hero-actions small{font-size:10px;color:var(--muted);letter-spacing:.1em}
 .hero-image{position:relative}
-.hero-image img{height:600px;object-fit:cover}
+.hero-image img{height:600px;aspect-ratio:3/4;object-fit:cover}
 .hero-image figcaption{display:flex;justify-content:space-between;margin-top:10px;font-size:9px;letter-spacing:.13em;color:var(--muted);text-transform:uppercase}
 .hero-image figcaption b{color:var(--ink)}
 .intro{border-top:1px solid var(--line);padding:92px 0}
@@ -72,7 +73,7 @@ h1,h2,h3{font-family:"Space Grotesk";margin:0;letter-spacing:-.065em;line-height
 .work-main:after{content:"";position:absolute;right:-110px;bottom:-110px;width:340px;height:340px;border:1px solid rgba(255,255,255,.1);border-radius:50%}
 .work-side{display:grid;grid-template-rows:1fr 1fr;gap:12px}
 .work-card{position:relative;min-height:319px;overflow:hidden;background:#183640}
-.work-card img{height:100%;object-fit:cover;transition:transform .6s ease}
+.work-card img{height:100%;aspect-ratio:16/10;object-fit:cover;transition:transform .6s ease}
 .work-card:hover img{transform:scale(1.025)}
 .work-card:after{content:"";position:absolute;inset:45% 0 0;background:linear-gradient(transparent,rgba(13,33,41,.92))}
 .work-card .caption{position:absolute;z-index:2;left:20px;right:20px;bottom:19px}
@@ -102,12 +103,13 @@ h1,h2,h3{font-family:"Space Grotesk";margin:0;letter-spacing:-.065em;line-height
 .cta h2{font-size:clamp(58px,8vw,116px);max-width:1050px}
 .cta-bottom{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-top:45px}
 .cta-bottom p{max-width:450px;margin:0;font-size:15px;line-height:1.75}
-.cta-bottom a{background:var(--ink);padding:16px 21px;font-size:10px;font-weight:700;letter-spacing:.12em;white-space:nowrap}
+.cta-bottom a{background:var(--ink);padding:16px 21px;min-height:48px;display:inline-flex;align-items:center;font-size:10px;font-weight:700;letter-spacing:.12em;white-space:nowrap}
+.wa-float{position:fixed;right:18px;bottom:18px;z-index:25;background:var(--orange);color:#fff;min-width:54px;height:54px;border-radius:999px;display:grid;place-items:center;font-size:10px;font-weight:700;letter-spacing:.08em;box-shadow:0 10px 30px rgba(13,33,41,.22)}
 footer{background:var(--ink);color:rgba(255,255,255,.5);padding:27px 0;font-size:10px}
 .footer{display:flex;justify-content:space-between;gap:20px}.footer b{color:#fff}
 @media(max-width:980px){.wrap{width:min(calc(100% - 48px),var(--max))}.nav-center{gap:18px}.hero-grid{grid-template-columns:1fr 1fr;gap:32px}.hero-image img{height:500px}.services-list{grid-template-columns:repeat(3,1fr)}.service:nth-child(3){border-right:0}.service:nth-child(4),.service:nth-child(5){border-top:1px solid var(--line)}.work-grid{grid-template-columns:1fr}.work-main{min-height:580px}.work-side{grid-template-columns:1fr 1fr;grid-template-rows:1fr}.work-card{min-height:300px}}
-@media(max-width:700px){.wrap{width:min(calc(100% - 32px),var(--max))}.nav-center,.nav-cta{display:none}.mobile-actions{display:flex}.mobile-link{display:block}.hero{padding:112px 0 70px}.hero-grid,.intro-grid,.services-head,.thinking-grid,.cta-grid{grid-template-columns:1fr;gap:28px}.hero h1{font-size:68px}.hero-image{margin-top:18px}.hero-image img{height:470px}.intro,.services,.thinking{padding:82px 0}.work{padding:82px 0 90px}.work-top{display:block}.work-top p{margin-top:20px}.work-grid{margin-top:38px}.work-main{min-height:500px;padding:25px}.work-side{grid-template-columns:1fr 1fr;gap:8px}.work-card{min-height:220px}.work-card .caption{left:14px;right:14px;bottom:14px}.work-card .caption strong{font-size:17px}.services-list{grid-template-columns:1fr;margin-top:45px}.service,.service:not(:first-child){border-right:0;border-bottom:1px solid var(--line);padding:21px 0;min-height:0}.service:last-child{border-bottom:0}.service h3{margin-top:35px}.principles{grid-template-columns:1fr;margin-top:45px}.principle,.principle:not(:first-child){border-right:0;border-bottom:1px solid var(--line);padding:22px 0;min-height:0}.principle:last-child{border-bottom:0}.cta{padding:82px 0}.cta-bottom{display:block}.cta-bottom a{display:inline-block;margin-top:25px}.footer{display:block}.footer div+div{margin-top:8px}}
-@media(max-width:460px){.hero h1{font-size:60px}.hero-image img{height:410px}.work-main{min-height:430px}.work-main .jmc{font-size:82px}.work-side{grid-template-columns:1fr}.work-card{min-height:260px}}
+@media(max-width:700px){.wrap{width:min(calc(100% - 32px),var(--max))}.nav{height:68px}.logo{font-size:14px}.nav-center,.nav-cta{display:none}.mobile-actions{display:flex;gap:2px}.mobile-link{display:inline-flex;padding:9px 6px}.hero{padding:112px 0 70px}.hero-grid,.intro-grid,.services-head,.thinking-grid,.cta-grid{grid-template-columns:1fr;gap:28px}.hero h1{font-size:68px;max-width:7ch}.hero-image{margin-top:18px}.hero-image img{height:470px}.intro,.services,.thinking{padding:82px 0}.work{padding:82px 0 90px}.work-top{display:block}.work-top p{margin-top:20px}.work-grid{margin-top:38px}.work-main{min-height:500px;padding:25px}.work-side{grid-template-columns:1fr 1fr;gap:8px}.work-card{min-height:220px}.work-card .caption{left:14px;right:14px;bottom:14px}.work-card .caption strong{font-size:17px}.services-list{grid-template-columns:1fr;margin-top:45px}.service,.service:not(:first-child){border-right:0;border-bottom:1px solid var(--line);padding:21px 0;min-height:0}.service:last-child{border-bottom:0}.service h3{margin-top:35px}.principles{grid-template-columns:1fr;margin-top:45px}.principle,.principle:not(:first-child){border-right:0;border-bottom:1px solid var(--line);padding:22px 0;min-height:0}.principle:last-child{border-bottom:0}.cta{padding:82px 0}.cta-bottom{display:block}.cta-bottom a{display:inline-flex;margin-top:25px}.wa-float{right:14px;bottom:14px}.footer{display:block}.footer div+div{margin-top:8px}}
+@media(max-width:460px){.hero h1{font-size:58px}.hero-image img{height:410px}.work-main{min-height:430px}.work-main .jmc{font-size:82px}.work-side{grid-template-columns:1fr}.work-card{min-height:260px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.work-card img{transition:none}}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"NUSAKARA CREATIVE","url":"https://nusakaracreative.github.io/nusakaracreative/","serviceType":["Strategi Kreatif","Branding","Konten","Pemasaran Digital","Produksi Kreatif"],"areaServed":["Bandung","Cimahi","Jawa Barat"]}</script>
@@ -145,8 +147,8 @@ footer{background:var(--ink);color:rgba(255,255,255,.5);padding:27px 0;font-size
 <div class="work-grid">
 <a class="work-main" href="work/jaya-mediacell/"><span class="jmc">JMC</span><div class="work-meta"><small>JAYA MEDIACELL / STUDI KASUS DIGITAL</small><strong>Membangun kehadiran digital untuk bisnis yang baru bertumbuh.</strong><span>LIHAT STUDI KASUS ↗</span></div></a>
 <div class="work-side">
-<a class="work-card" href="portfolio/"><img src="12.webp" alt="Karya Commercial NUSAKARA"><div class="caption"><small>COMMERCIAL / 12</small><strong>Kampanye komersial</strong></div></a>
-<a class="work-card" href="portfolio/"><img src="assets/portfolio/hunting/15.webp?v=20260929" alt="Karya Hunting NUSAKARA"><div class="caption"><small>HUNTING / 15</small><strong>Potret & dokumenter</strong></div></a>
+<a class="work-card" href="portfolio/"><img src="12.webp" alt="Karya Commercial NUSAKARA" loading="lazy" decoding="async"><div class="caption"><small>COMMERCIAL / 12</small><strong>Kampanye komersial</strong></div></a>
+<a class="work-card" href="portfolio/"><img src="assets/portfolio/hunting/15.webp?v=20260929" alt="Karya Hunting NUSAKARA" loading="lazy" decoding="async"><div class="caption"><small>HUNTING / 15</small><strong>Potret & dokumenter</strong></div></a>
 </div></div>
 <a class="archive" href="portfolio/">LIHAT PORTOFOLIO LENGKAP / 46 KARYA ↗</a>
 </div></section>
@@ -172,10 +174,11 @@ footer{background:var(--ink);color:rgba(255,255,255,.5);padding:27px 0;font-size
 </div></div>
 </div></section>
 
-<section class="cta" id="kontak"><div class="wrap cta-grid">
+<section class="cta" id="kontak" aria-labelledby="contact-title"><div class="wrap cta-grid">
 <div class="eyebrow" style="color:#fff">04 / MULAI</div>
-<div><h2>Ada sesuatu yang ingin dibuat lebih jelas?</h2><div class="cta-bottom"><p>Ceritakan bisnis atau proyek Anda. Kita mulai dari konteksnya.</p><a href="https://wa.me/6282312493330?text=Halo%20NUSAKARA%20CREATIVE%2C%20saya%20ingin%20membahas%20proyek%20kreatif%20dan%20digital.">BICARAKAN PROYEK ↗</a></div></div>
+<div><h2 id="contact-title">Ada sesuatu yang ingin dibuat lebih jelas?</h2><div class="cta-bottom"><p>Ceritakan bisnis atau proyek Anda. Kita mulai dari konteksnya.</p><a href="https://wa.me/6282312493330?text=Halo%20NUSAKARA%20CREATIVE%2C%20saya%20ingin%20membahas%20proyek%20kreatif%20dan%20digital.">BICARAKAN PROYEK ↗</a></div></div>
 </div></section>
+<a class="wa-float" href="https://wa.me/6282312493330?text=Halo%20NUSAKARA%20CREATIVE%2C%20saya%20ingin%20membahas%20proyek%20kreatif%20dan%20digital." aria-label="Hubungi NUSAKARA CREATIVE melalui WhatsApp">WA ↗</a>
 </main>
 <footer><div class="wrap footer"><div><b>NUSAKARA CREATIVE</b> — Creative & Digital Growth Partner.</div><div>Bandung · Jawa Barat · © 2026</div></div></footer>
 </body></html>
