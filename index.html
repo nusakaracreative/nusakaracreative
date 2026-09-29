@@ -113,7 +113,17 @@ footer{background:var(--ink);color:rgba(255,255,255,.5);padding:27px 0;font-size
 @media(max-width:700px){footer{padding-bottom:96px}.wrap{width:min(calc(100% - 32px),var(--max))}.nav{height:68px}.logo{font-size:14px}.nav-center,.nav-cta{display:none}.mobile-actions{display:flex;gap:2px}.mobile-link{display:inline-flex;padding:9px 6px}.hero{padding:112px 0 70px}.hero-grid,.intro-grid,.services-head,.thinking-grid,.cta-grid{grid-template-columns:1fr;gap:28px}.hero h1{font-size:68px;max-width:7ch}.hero-image{margin-top:18px}.hero-image img{height:470px}.intro,.services,.thinking{padding:82px 0}.work{padding:82px 0 90px}.work-top{display:block}.work-top p{margin-top:20px}.work-grid{margin-top:38px}.work-main{min-height:500px;padding:25px}.work-side{grid-template-columns:1fr 1fr;gap:8px}.work-card{min-height:220px}.work-card .caption{left:14px;right:14px;bottom:14px}.work-card .caption strong{font-size:17px}.services-list{grid-template-columns:1fr;margin-top:45px}.service,.service:not(:first-child){border-right:0;border-bottom:1px solid var(--line);padding:21px 0;min-height:0}.service:last-child{border-bottom:0}.service h3{margin-top:35px}.principles{grid-template-columns:1fr;margin-top:45px}.principle,.principle:not(:first-child){border-right:0;border-bottom:1px solid var(--line);padding:22px 0;min-height:0}.principle:last-child{border-bottom:0}.cta{padding:82px 0}.cta-bottom{display:block}.cta-bottom a{display:inline-flex;margin-top:25px}.wa-float{right:14px;bottom:14px}.cta{scroll-margin-top:76px}.footer{display:block}.footer div+div{margin-top:8px}}
 @media(max-width:460px){.hero h1{font-size:58px}.hero-image img{height:410px}.work-main{min-height:430px}.work-main .jmc{font-size:82px}.work-side{grid-template-columns:1fr}.work-card{min-height:260px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.work-card img{transition:none}}
-</style>
+:root{--bg:#071318;--ink:#f4f2ed;--deep:#033040;--orange:#fa3e0b;--paper:#f4f2ed;--muted:#98a5a8;--line:rgba(255,255,255,.13)}
+html{background:var(--bg);scroll-padding-top:82px}body{background:var(--bg);color:var(--ink)}header{height:82px;background:rgba(7,19,24,.76);border-bottom:1px solid rgba(255,255,255,.08)}.nav{height:82px}.logo-mark{width:46px;height:46px;margin:0;object-fit:contain}.logo span{color:#fff}.nav-center a{color:rgba(255,255,255,.7)}.nav-cta{border:1px solid rgba(255,255,255,.32);border-radius:999px;padding:0 18px}.nav-cta:hover{background:var(--orange);border-color:var(--orange)}
+.hero{min-height:100svh;padding:128px 0 64px;background:radial-gradient(circle at 78% 24%,rgba(250,62,11,.2),transparent 27%),radial-gradient(circle at 100% 100%,rgba(3,48,64,.9),transparent 38%),var(--bg)}.hero-grid{grid-template-columns:minmax(0,1fr) minmax(360px,.9fr);gap:58px}.hero h1{font-size:clamp(72px,9vw,145px);color:#fff}.hero h1 .orange{color:var(--orange)}.eyebrow{color:#ff7755}.hero-copy{color:#b7c1c3}.hero-actions a{border:0}.hero-actions .primary-btn{background:var(--orange);border-radius:999px;padding:0 20px;color:#fff}.hero-actions small{color:#9aa7aa}.hero-image{margin:0}.hero-image img{height:640px;aspect-ratio:auto;border-radius:26px;border:1px solid rgba(255,255,255,.1);box-shadow:0 35px 100px rgba(0,0,0,.35)}.hero-image figcaption{color:#8b989b}.hero-image figcaption b{color:#fff}
+.intro{background:var(--paper);color:#071318;padding:120px 0}.intro .eyebrow{color:#c6492b}.intro-copy{color:#617074}.intro h2{font-size:clamp(58px,7vw,110px)}
+.dark.work{background:#071318;padding:120px 0}.work-top p{color:#98a5a8}.work-top h2{color:#fff}.work-main,.work-card{border-radius:24px;border:1px solid rgba(255,255,255,.12)}.work-main{background:linear-gradient(145deg,#0d2129,#033040);min-height:640px}.work-card{border-radius:20px}.work-card:after{background:linear-gradient(transparent,rgba(7,19,24,.94))}.archive{border-bottom:0;border:1px solid rgba(255,255,255,.3);border-radius:999px;padding:13px 18px}
+.services{background:#f4f2ed;color:#071318;padding:120px 0}.services .eyebrow{color:#c6492b}.services h2{font-size:clamp(58px,7vw,105px)}.service{border:1px solid rgba(13,33,41,.13);border-radius:22px;background:#fff}.service h3{margin-top:58px}
+.thinking{background:#0d2129;color:#fff;padding:120px 0}.thinking h2{font-size:clamp(58px,7vw,105px)}.thinking-copy{color:#9aa7aa}.principle{border-color:rgba(255,255,255,.13)}.principle b{color:#fff}.principle p{color:#9aa7aa}
+.cta{background:var(--orange);padding:120px 0}.cta h2{font-size:clamp(60px,8vw,125px)}.cta-bottom a{border-radius:999px}.wa-float{background:var(--orange);border:2px solid rgba(255,255,255,.25);min-width:58px;height:58px;border-radius:999px}
+footer{background:#040b0e;color:#7e8a8d}footer b{color:#fff}
+@media(max-width:700px){header,.nav{height:70px}.logo-mark{width:40px;height:40px}.logo span{font-size:10px;color:#fff}.mobile-actions{display:flex;align-items:center;gap:1px;overflow-x:auto;margin-left:auto}.mobile-link{display:inline-flex;color:rgba(255,255,255,.72);min-height:42px;padding:8px 6px;font-size:8px}.hero{padding:108px 0 45px}.hero-grid{grid-template-columns:1fr;gap:34px}.hero h1{font-size:clamp(60px,16vw,92px)}.hero-image{margin-top:8px}.hero-image img{height:460px;border-radius:20px}.intro,.dark.work,.services,.thinking,.cta{padding:82px 0}.intro-grid,.services-head,.thinking-grid,.cta-grid{grid-template-columns:1fr;gap:25px}.intro h2,.services h2,.thinking h2{font-size:clamp(50px,13vw,74px)}.work-top{display:block}.work-top p{margin-top:18px}.work-grid{margin-top:34px}.work-main{min-height:500px;border-radius:18px}.work-card{min-height:230px;border-radius:18px}.work-side{grid-template-columns:1fr 1fr;gap:8px}.services-list{grid-template-columns:1fr;margin-top:35px}.service,.service:not(:first-child){border-radius:18px;padding:20px}.service h3{margin-top:45px}.principles{grid-template-columns:1fr}.principle,.principle:not(:first-child){border-right:0;border-bottom:1px solid rgba(255,255,255,.13);padding:20px 0}.cta-bottom{display:block}.cta-bottom a{margin-top:22px;display:inline-flex}.footer{display:block}.footer div+div{margin-top:8px}}
+@media(max-width:420px){.logo-mark{width:38px;height:38px}.logo span{font-size:9px}.hero h1{font-size:56px}.hero-image img{height:410px}.work-side{grid-template-columns:1fr}}</style>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","name":"NUSAKARA CREATIVE","url":"https://nusakaracreative.github.io/nusakaracreative/","description":"NUSAKARA CREATIVE membantu brand dan bisnis melalui digital marketing, social media experiences, strategi kreatif, konten, branding, dan eksekusi digital.","areaServed":["Bandung","Cimahi","Jawa Barat"],"knowsAbout":["Strategi Kreatif","Branding","Konten","Pemasaran Digital","Social Media","Produksi Kreatif"]},{"@type":"WebSite","name":"NUSAKARA CREATIVE","url":"https://nusakaracreative.github.io/nusakaracreative/","inLanguage":"id-ID"}]}</script>
 </head>
 <body>
@@ -128,9 +138,9 @@ footer{background:var(--ink);color:rgba(255,255,255,.5);padding:27px 0;font-size
 <main id="main">
 <section class="hero"><div class="wrap hero-grid">
 <div>
-<div class="eyebrow">CREATIVE & DIGITAL GROWTH PARTNER</div>
-<h1><span>MEMBUAT</span><span>MEREK <span class="orange">BERGERAK.</span></span></h1>
-<p class="hero-copy">Kami menyatukan strategi, kreativitas, dan eksekusi digital untuk membantu brand dan bisnis bergerak dengan arah yang lebih jelas.</p>
+<div class="eyebrow">DIGITAL MARKETING / SOCIAL MEDIA EXPERIENCES</div>
+<h1><span>IDEAS</span><span>INTO <span class="orange">EXPERIENCES.</span></span></h1>
+<p class="hero-copy">NUSAKARA CREATIVE menyatukan strategi, kreativitas, konten, dan eksekusi digital untuk membantu brand bergerak dengan arah yang lebih jelas.</p>
 <div class="hero-actions"><a href="#karya">LIHAT KARYA ↓</a><small>BANDUNG · JAWA BARAT</small></div>
 </div>
 <figure class="hero-image">
@@ -141,7 +151,7 @@ footer{background:var(--ink);color:rgba(255,255,255,.5);padding:27px 0;font-size
 
 <section class="intro"><div class="wrap intro-grid">
 <div class="eyebrow">NUSAKARA</div>
-<div><h2>Kreatif yang berangkat dari konteks.</h2><p class="intro-copy">Kami membantu brand dan bisnis menemukan arah, membangun cara berkomunikasi, lalu menerjemahkannya menjadi pekerjaan kreatif dan digital yang bisa dijalankan.</p></div>
+<div><h2>Kreatif yang punya arah. Digital yang terasa.</h2><p class="intro-copy">Kami membantu brand dan bisnis menemukan arah, membangun cara berkomunikasi, lalu menerjemahkannya menjadi pekerjaan kreatif dan digital yang bisa dijalankan.</p></div>
 </div></section>
 
 <section class="dark work" id="karya"><div class="wrap">
@@ -157,7 +167,7 @@ footer{background:var(--ink);color:rgba(255,255,255,.5);padding:27px 0;font-size
 
 <section class="services" id="layanan"><div class="wrap services-head">
 <div class="eyebrow">02 / LAYANAN</div>
-<div><h2>Dari arah sampai eksekusi.</h2><div class="services-list">
+<div><h2>Dari strategy hingga execution.</h2><div class="services-list">
 <div class="service"><span class="no">01</span><h3>Strategi</h3><p>Arah merek, komunikasi, kampanye, dan pemasaran.</p></div>
 <div class="service"><span class="no">02</span><h3>Branding</h3><p>Identitas dan sistem visual yang konsisten.</p></div>
 <div class="service"><span class="no">03</span><h3>Konten</h3><p>Konsep, desain, foto, video, copywriting, dan sosial media.</p></div>
@@ -168,7 +178,7 @@ footer{background:var(--ink);color:rgba(255,255,255,.5);padding:27px 0;font-size
 
 <section class="thinking" id="cara-kerja"><div class="wrap thinking-grid">
 <div class="eyebrow">03 / CARA KERJA</div>
-<div><h2>Bukan membuat lebih banyak. Membuat yang lebih tepat.</h2><p class="thinking-copy">Kami mulai dari masalah dan konteks bisnis. Setelah arah jelas, kreativitas digunakan untuk membuat pesan lebih mudah dipahami, lebih relevan, dan lebih siap dijalankan.</p>
+<div><h2>Make it clear. Make it matter.</h2><p class="thinking-copy">Kami mulai dari masalah dan konteks bisnis. Setelah arah jelas, kreativitas digunakan untuk membuat pesan lebih mudah dipahami, lebih relevan, dan lebih siap dijalankan.</p>
 <div class="principles">
 <div class="principle"><b>01 — Pahami</b><p>Kami mencari konteks sebelum menentukan bentuk.</p></div>
 <div class="principle"><b>02 — Bentuk</b><p>Ide diterjemahkan menjadi sistem visual dan konten yang jelas.</p></div>
@@ -178,11 +188,11 @@ footer{background:var(--ink);color:rgba(255,255,255,.5);padding:27px 0;font-size
 
 <section class="cta" id="kontak" aria-labelledby="contact-title"><div class="wrap cta-grid">
 <div class="eyebrow" style="color:#fff">04 / MULAI</div>
-<div><h2 id="contact-title">Ada sesuatu yang ingin dibuat lebih jelas?</h2><div class="cta-bottom"><p>Ceritakan bisnis atau proyek Anda. Kita mulai dari konteksnya.</p><a href="https://wa.me/6282312493330?text=Halo%20NUSAKARA%20CREATIVE%2C%20saya%20ingin%20membahas%20proyek%20kreatif%20dan%20digital." data-wa-source="homepage-cta">BICARAKAN PROYEK ↗</a></div></div>
+<div><h2 id="contact-title">Have an idea? Let’s move it.</h2><div class="cta-bottom"><p>Ceritakan bisnis atau proyek Anda. Kita mulai dari konteksnya.</p><a href="https://wa.me/6282312493330?text=Halo%20NUSAKARA%20CREATIVE%2C%20saya%20ingin%20membahas%20proyek%20kreatif%20dan%20digital." data-wa-source="homepage-cta">BICARAKAN PROYEK ↗</a></div></div>
 </div></section>
 <a class="wa-float" href="https://wa.me/6282312493330?text=Halo%20NUSAKARA%20CREATIVE%2C%20saya%20ingin%20membahas%20proyek%20kreatif%20dan%20digital." data-wa-source="homepage-float" aria-label="Hubungi NUSAKARA CREATIVE melalui WhatsApp">CHAT PROJECT ↗</a>
 </main>
-<footer><div class="wrap footer"><div><b>NUSAKARA CREATIVE</b> — Creative & Digital Growth Partner.</div><div>Bandung · Jawa Barat · © 2026</div></div></footer>
+<footer><div class="wrap footer"><div><b>NUSAKARA CREATIVE</b> — Digital Marketing & Social Media Experiences.</div><div>Bandung · Jawa Barat · © 2026</div></div></footer>
 <script>
 document.querySelectorAll('a[data-wa-source]').forEach(link=>link.addEventListener('click',()=>{
   const source=link.dataset.waSource;
