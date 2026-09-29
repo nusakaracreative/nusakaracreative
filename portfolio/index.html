@@ -18,7 +18,16 @@ section{padding:75px 0}.section-head{display:flex;justify-content:space-between;
 footer{background:var(--ink);color:#fff;padding:26px 0}.footer{display:flex;justify-content:space-between;gap:20px;font-size:10px;color:rgba(255,255,255,.5)}
 @media(max-width:800px){.hero,.categories{grid-template-columns:1fr}.archive-grid{grid-template-columns:1fr 1fr}.archive-item:nth-child(3n){border-right:1px solid rgba(255,255,255,.15)}.section-head{display:block}.intro{margin-top:15px}.cta-row{display:block}.cta-row .btn{margin-top:20px}}
 @media(max-width:560px){.wrap{width:min(calc(100% - 30px),var(--max))}.hero{padding-top:70px}.hero h1{font-size:65px}.stats{grid-template-columns:1fr}.archive-grid{grid-template-columns:1fr}.archive-item{border-right:0!important;margin-right:0}.footer{display:block}.footer div+div{margin-top:8px}}
-.filter{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 28px}.filter button{border:1px solid var(--line);background:transparent;color:var(--ink);border-radius:999px;padding:10px 14px;font:700 9px "DM Sans";letter-spacing:.1em;cursor:pointer}.filter button.active,.filter button:hover{background:var(--ink);color:#fff}.gallery{columns:3 280px;column-gap:14px}.photo{display:block;position:relative;break-inside:avoid;margin:0 0 14px;border-radius:16px;overflow:hidden;background:var(--ink)}.photo img{display:block;width:100%;height:auto;transition:transform .45s ease}.photo:hover img{transform:scale(1.025)}.photo span{position:absolute;left:12px;bottom:10px;font-size:8px;letter-spacing:.12em;font-weight:700;color:#fff;text-shadow:0 1px 8px #000}.photo.is-hidden{display:none}@media(max-width:700px){.gallery{columns:2 160px}}@media(max-width:430px){.gallery{columns:1}} </style>
+.filter{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 34px}.filter button{border:1px solid var(--line);background:transparent;color:var(--ink);border-radius:999px;padding:10px 15px;font:700 9px "DM Sans";letter-spacing:.1em;cursor:pointer;transition:.2s ease}.filter button.active,.filter button:hover{background:var(--ink);color:#fff;transform:translateY(-1px)}
+.gallery{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));grid-auto-rows:8px;grid-auto-flow:dense;gap:18px;align-items:start}
+.photo{display:block;position:relative;min-width:0;overflow:hidden;background:var(--ink);grid-column:span 4;grid-row:span var(--rows,30);isolation:isolate}
+.photo:nth-child(7n+1),.photo:nth-child(7n+5){grid-column:span 6}
+.photo:nth-child(7n+3){grid-column:span 3}
+.photo img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .7s cubic-bezier(.2,.7,.2,1),filter .5s ease;filter:saturate(.96)}.photo:hover img{transform:scale(1.035);filter:saturate(1.04)}
+.photo:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 58%,rgba(0,0,0,.58));opacity:.65;pointer-events:none}
+.photo span{position:absolute;left:16px;bottom:14px;font-size:8px;letter-spacing:.14em;font-weight:700;color:#fff;text-shadow:0 1px 8px #000;z-index:2}.photo.is-hidden{display:none}
+@media(max-width:900px){.gallery{grid-template-columns:repeat(6,minmax(0,1fr));gap:12px}.photo{grid-column:span 3}.photo:nth-child(7n+1),.photo:nth-child(7n+5){grid-column:span 4}.photo:nth-child(7n+3){grid-column:span 2}}
+@media(max-width:560px){.gallery{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:7px;gap:9px}.photo,.photo:nth-child(7n+1),.photo:nth-child(7n+5),.photo:nth-child(7n+3){grid-column:span 1}.photo:nth-child(5n+1){grid-column:span 2}} </style>
 </head>
 <body>
 <header><div class="wrap nav"><a class="brand" href="../"><span class="mark">N</span><span>NUSAKARA <small>CREATIVE</small></span></a><a class="back" href="../">← KEMBALI KE BERANDA</a></div></header>
@@ -43,5 +52,33 @@ footer{background:var(--ink);color:#fff;padding:26px 0}.footer{display:flex;just
 <section class="cta"><div class="wrap"><div class="kicker" style="color:#fff">05 / PROYEK FOTOGRAFI</div><h2>Butuh visual yang punya arah?</h2><div class="cta-row"><p>NUSAKARA dapat membantu dari arahan kreatif, konsep, produksi, hingga kebutuhan visual untuk merek dan bisnis.</p><a class="btn" href="https://wa.me/6282312493330">BICARAKAN PROYEK ↗</a></div></div></section>
 </main>
 <footer><div class="wrap footer"><div><strong>NUSAKARA CREATIVE</strong> — Mitra Kreatif & Pertumbuhan Digital.</div><div>Bandung · Cimahi · Jawa Barat · © 2026</div></div></footer>
-<script>document.querySelectorAll('.filter button').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.filter button').forEach(x=>x.classList.remove('active'));b.classList.add('active');const f=b.dataset.filter;document.querySelectorAll('.photo').forEach(p=>p.classList.toggle('is-hidden',f!=='all'&&p.dataset.cat!==f))}));</script></body>
+<script>
+const gallery=document.querySelector('.gallery');
+const photos=[...document.querySelectorAll('.photo')];
+function sizeEditorialGallery(){
+  if(!gallery||!photos.length)return;
+  const cols=window.innerWidth<=560?2:window.innerWidth<=900?6:12;
+  const gap=parseFloat(getComputedStyle(gallery).gap)||12;
+  const colWidth=(gallery.clientWidth-gap*(cols-1))/cols;
+  const rowHeight=parseFloat(getComputedStyle(gallery).gridAutoRows)||8;
+  photos.forEach((p,i)=>{
+    const img=p.querySelector('img');
+    if(!img.naturalWidth)return;
+    const spans=p.matches(':nth-child(7n+1),:nth-child(7n+5)')?(window.innerWidth<=900?(window.innerWidth<=560?2:4):6):p.matches(':nth-child(7n+3)')?(window.innerWidth<=900?(window.innerWidth<=560?1:2):3):(window.innerWidth<=900?(window.innerWidth<=560?1:3):4);
+    const width=colWidth*spans+gap*(spans-1);
+    const height=width*(img.naturalHeight/img.naturalWidth);
+    p.style.setProperty('--rows',Math.max(18,Math.ceil((height+gap)/(rowHeight+gap))));
+  });
+}
+photos.forEach(p=>p.querySelector('img').addEventListener('load',sizeEditorialGallery));
+window.addEventListener('resize',()=>requestAnimationFrame(sizeEditorialGallery));
+document.querySelectorAll('.filter button').forEach(b=>b.addEventListener('click',()=>{
+  document.querySelectorAll('.filter button').forEach(x=>x.classList.remove('active'));
+  b.classList.add('active');
+  const f=b.dataset.filter;
+  photos.forEach(p=>p.classList.toggle('is-hidden',f!=='all'&&p.dataset.cat!==f));
+  requestAnimationFrame(sizeEditorialGallery);
+}));
+sizeEditorialGallery();
+</script></body>
 </html>
