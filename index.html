@@ -123,7 +123,65 @@ html{background:var(--bg);scroll-padding-top:82px}body{background:var(--bg);colo
 .cta{background:var(--orange);padding:120px 0}.cta h2{font-size:clamp(60px,8vw,125px)}.cta-bottom a{border-radius:999px}.wa-float{background:var(--orange);border:2px solid rgba(255,255,255,.25);min-width:58px;height:58px;border-radius:999px}
 footer{background:#040b0e;color:#7e8a8d}footer b{color:#fff}
 @media(max-width:700px){header,.nav{height:70px}.logo-mark{width:36px;height:36px}.logo span{font-size:10px;color:#fff}.mobile-actions{display:flex;align-items:center;gap:1px;overflow-x:auto;margin-left:auto}.mobile-link{display:inline-flex;color:rgba(255,255,255,.72);min-height:42px;padding:8px 6px;font-size:8px}.hero{padding:108px 0 45px}.hero-grid{grid-template-columns:1fr;gap:34px}.hero h1{font-size:clamp(60px,16vw,92px)}.hero-image{margin-top:8px}.hero-image img{height:460px;border-radius:20px}.intro,.dark.work,.services,.thinking,.cta{padding:82px 0}.intro-grid,.services-head,.thinking-grid,.cta-grid{grid-template-columns:1fr;gap:25px}.intro h2,.services h2,.thinking h2{font-size:clamp(50px,13vw,74px)}.work-top{display:block}.work-top p{margin-top:18px}.work-grid{margin-top:34px}.work-main{min-height:500px;border-radius:18px}.work-card{min-height:230px;border-radius:18px}.work-side{grid-template-columns:1fr 1fr;gap:8px}.services-list{grid-template-columns:1fr;margin-top:35px}.service,.service:not(:first-child){border-radius:18px;padding:20px}.service h3{margin-top:45px}.principles{grid-template-columns:1fr}.principle,.principle:not(:first-child){border-right:0;border-bottom:1px solid rgba(255,255,255,.13);padding:20px 0}.cta-bottom{display:block}.cta-bottom a{margin-top:22px;display:inline-flex}.footer{display:block}.footer div+div{margin-top:8px}}
-@media(max-width:420px){.logo-mark{width:34px;height:34px}.logo span{font-size:9px}.hero h1{font-size:56px}.hero-image img{height:410px}.work-side{grid-template-columns:1fr}}</style>
+@media(max-width:420px){.logo-mark{width:34px;height:34px}.logo span{font-size:9px}.hero h1{font-size:56px}.hero-image img{height:410px}.work-side{grid-template-columns:1fr}}
+/* FINAL HOMEPAGE POLISH — precise layout, responsive typography, readable controls */
+header{height:86px}
+.nav{height:86px}
+.logo-mark{width:50px;height:44px}
+.logo span{font-size:11.5px}
+.hero{padding-top:142px}
+.hero-grid{
+  grid-template-columns:minmax(0,1fr) minmax(430px,.78fr);
+  gap:clamp(48px,5vw,76px);
+  align-items:center;
+}
+.hero-grid>div:first-child{min-width:0}
+.hero h1{
+  max-width:8.4ch;
+  font-size:clamp(68px,7.7vw,118px);
+  line-height:.82;
+  overflow-wrap:normal;
+  text-wrap:balance;
+}
+.hero h1>span{display:block}
+.hero h1 .orange{display:block}
+.hero-copy{max-width:500px;font-size:15px;line-height:1.65}
+.hero-image{min-width:0}
+.hero-image img{height:clamp(520px,44vw,610px)}
+.hero-image figcaption{font-size:10px}
+.wa-float{
+  min-width:146px;
+  height:48px;
+  padding:0 18px;
+  font-size:10px;
+  border:1px solid rgba(255,255,255,.28);
+  box-shadow:0 14px 36px rgba(0,0,0,.34);
+}
+@media(max-width:1100px){
+  .hero-grid{grid-template-columns:minmax(0,1fr) minmax(350px,.76fr);gap:42px}
+  .hero h1{font-size:clamp(64px,7.8vw,102px)}
+}
+@media(max-width:700px){
+  header,.nav{height:72px}
+  .logo-mark{width:42px;height:38px}
+  .logo span{font-size:10px}
+  .hero{padding-top:106px}
+  .hero-grid{grid-template-columns:1fr;gap:32px}
+  .hero h1{max-width:9ch;font-size:clamp(58px,15.5vw,88px);line-height:.84}
+  .hero-copy{font-size:15px;line-height:1.65}
+  .hero-image img{height:460px}
+  .hero-image figcaption{font-size:9px}
+  .wa-float{right:14px;min-width:132px;height:46px;padding:0 15px}
+}
+@media(max-width:420px){
+  .hero h1{font-size:56px}
+  .hero-image img{height:410px}
+}
+@media(prefers-contrast:more){
+  .nav-center a,.hero-image figcaption,.hero-actions small{color:#cbd4d6}
+  .hero-copy{color:#e0e6e7}
+}
+</style>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","name":"NUSAKARA CREATIVE","url":"https://nusakaracreative.github.io/nusakaracreative/","description":"NUSAKARA CREATIVE membantu brand dan bisnis melalui digital marketing, social media experiences, strategi kreatif, konten, branding, dan eksekusi digital.","areaServed":["Bandung","Cimahi","Jawa Barat"],"knowsAbout":["Strategi Kreatif","Branding","Konten","Pemasaran Digital","Social Media","Produksi Kreatif"]},{"@type":"ProfessionalService","name":"NUSAKARA CREATIVE","url":"https://nusakaracreative.github.io/nusakaracreative/","description":"Digital marketing, social media experiences, creative strategy, content, branding, dan eksekusi digital.","serviceType":["Digital Marketing","Social Media","Creative Strategy","Content","Branding","Digital Campaigns"],"areaServed":["Bandung","Cimahi","Jawa Barat"],"inLanguage":"id-ID"},{"@type":"WebSite","name":"NUSAKARA CREATIVE","url":"https://nusakaracreative.github.io/nusakaracreative/","inLanguage":"id-ID"}]}</script>
 </head>
 <body>
