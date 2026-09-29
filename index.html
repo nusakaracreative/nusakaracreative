@@ -191,6 +191,35 @@ header{height:86px}.nav{height:86px}.logo-mark{width:50px;height:44px}.logo span
 @media(max-width:700px){header,.nav{height:72px}.logo-mark{width:42px;height:38px}.logo span{font-size:10px}.hero{padding-top:106px}.hero-grid{grid-template-columns:1fr;gap:32px}.hero h1{max-width:9ch;font-size:clamp(58px,15.5vw,88px);line-height:.84}.hero-copy{font-size:15px;line-height:1.65}.hero-image img{height:460px}.hero-image figcaption{font-size:9px}.wa-float{right:14px;min-width:132px;height:46px;padding:0 15px}}
 @media(max-width:420px){.hero h1{font-size:56px}.hero-image img{height:410px}}
 @media(prefers-contrast:more){.nav-center a,.hero-image figcaption,.hero-actions small{color:#cbd4d6}.hero-copy{color:#e0e6e7}}
+
+/* FINAL RESPONSIVE QA — mobile composition, contrast, spacing */
+.cta-bottom a{background:#071318;color:#fff;border:1px solid rgba(255,255,255,.12)}
+@media(max-width:700px){
+  .hero{
+    background:
+      radial-gradient(circle at 92% 7%,rgba(250,62,11,.08),transparent 30%),
+      radial-gradient(circle at 100% 100%,rgba(3,48,64,.72),transparent 46%),
+      var(--bg);
+  }
+  .hero h1{
+    max-width:none;
+    font-size:clamp(50px,13.2vw,58px);
+    line-height:.86;
+    letter-spacing:-.075em;
+  }
+  .mobile-actions{gap:4px}
+  .mobile-link{font-size:8.5px;padding:8px 7px}
+  .work-main{min-height:430px}
+  .work-main .jmc{font-size:74px}
+  .work-grid{gap:8px}
+  .service{background:#fff}
+  .cta-bottom a{background:#071318;color:#fff}
+}
+@media(max-width:420px){
+  .hero h1{font-size:50px}
+  .work-main{min-height:410px}
+  .work-main .jmc{font-size:68px}
+}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","name":"NUSAKARA CREATIVE","url":"https://nusakaracreative.github.io/nusakaracreative/","description":"NUSAKARA CREATIVE membantu brand dan bisnis melalui digital marketing, social media experiences, strategi kreatif, konten, branding, dan eksekusi digital.","areaServed":["Bandung","Cimahi","Jawa Barat"],"knowsAbout":["Strategi Kreatif","Branding","Konten","Pemasaran Digital","Social Media","Produksi Kreatif"]},{"@type":"ProfessionalService","name":"NUSAKARA CREATIVE","url":"https://nusakaracreative.github.io/nusakaracreative/","description":"Digital marketing, social media experiences, creative strategy, content, branding, dan eksekusi digital.","serviceType":["Digital Marketing","Social Media","Creative Strategy","Content","Branding","Digital Campaigns"],"areaServed":["Bandung","Cimahi","Jawa Barat"],"inLanguage":"id-ID"},{"@type":"WebSite","name":"NUSAKARA CREATIVE","url":"https://nusakaracreative.github.io/nusakaracreative/","inLanguage":"id-ID"}]}</script>
 </head>
