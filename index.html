@@ -20,12 +20,13 @@
 <meta name="twitter:image" content="https://nusakaracreative.github.io/nusakaracreative/13.webp">
 <meta name="theme-color" content="#f4f2ed">
 <meta name="format-detection" content="telephone=no">
+<link rel="preload" as="image" href="13.webp" imagesrcset="13-480.webp 480w, 13-800.webp 800w, 13-1200.webp 1200w" imagesizes="(max-width: 700px) 100vw, 50vw" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <style>
-:root{--bg:#f4f2ed;--ink:#0d2129;--deep:#033040;--orange:#fa3e0b;--muted:#68767b;--line:rgba(13,33,41,.16);--max:1280px}
+:root{--bg:#f4f2ed;--ink:#0d2129;--deep:#033040;--orange:#fa3e0b;--orange-text:#c63b10;--muted:#68767b;--line:rgba(13,33,41,.16);--max:1280px}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:76px}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:"DM Sans",Arial,sans-serif;-webkit-font-smoothing:antialiased}
@@ -40,7 +41,7 @@ header{height:76px;position:fixed;inset:0 0 auto;z-index:20;background:rgba(244,
 .nav-cta{font-size:10px;display:inline-flex;align-items:center;min-height:44px;font-weight:700;letter-spacing:.13em;border-bottom:1px solid var(--ink);padding-bottom:5px}
 .skip{position:fixed;left:14px;top:14px;z-index:100;transform:translateY(-150%);background:var(--ink);color:#fff;padding:10px;font-size:11px}.skip:focus{transform:none}
 .mobile-actions{display:none;gap:2px;align-items:center;overflow-x:auto;scrollbar-width:none}.mobile-actions::-webkit-scrollbar{display:none}.mobile-link{display:none;font-size:9px;padding:9px 6px;min-height:44px;align-items:center;font-weight:700;letter-spacing:.13em}
-.eyebrow{font-size:10px;font-weight:700;letter-spacing:.17em;color:var(--orange);text-transform:uppercase}
+.eyebrow{font-size:10px;font-weight:700;letter-spacing:.17em;color:var(--orange-text);text-transform:uppercase}
 h1,h2,h3{font-family:"Space Grotesk";margin:0;letter-spacing:-.065em;line-height:.92}
 .hero{padding:132px 0 88px}
 .hero-grid{display:grid;grid-template-columns:7fr 5fr;gap:64px;align-items:end}
@@ -109,7 +110,7 @@ h1,h2,h3{font-family:"Space Grotesk";margin:0;letter-spacing:-.065em;line-height
 footer{background:var(--ink);color:rgba(255,255,255,.5);padding:27px 0;font-size:10px}
 .footer{display:flex;justify-content:space-between;gap:20px}.footer b{color:#fff}
 @media(max-width:980px){.wrap{width:min(calc(100% - 48px),var(--max))}.nav-center{gap:18px}.hero-grid{grid-template-columns:1fr 1fr;gap:32px}.hero-image img{height:500px}.services-list{grid-template-columns:repeat(3,1fr)}.service:nth-child(3){border-right:0}.service:nth-child(4),.service:nth-child(5){border-top:1px solid var(--line)}.work-grid{grid-template-columns:1fr}.work-main{min-height:580px}.work-side{grid-template-columns:1fr 1fr;grid-template-rows:1fr}.work-card{min-height:300px}}
-@media(max-width:700px){.wrap{width:min(calc(100% - 32px),var(--max))}.nav{height:68px}.logo{font-size:14px}.nav-center,.nav-cta{display:none}.mobile-actions{display:flex;gap:2px}.mobile-link{display:inline-flex;padding:9px 6px}.hero{padding:112px 0 70px}.hero-grid,.intro-grid,.services-head,.thinking-grid,.cta-grid{grid-template-columns:1fr;gap:28px}.hero h1{font-size:68px;max-width:7ch}.hero-image{margin-top:18px}.hero-image img{height:470px}.intro,.services,.thinking{padding:82px 0}.work{padding:82px 0 90px}.work-top{display:block}.work-top p{margin-top:20px}.work-grid{margin-top:38px}.work-main{min-height:500px;padding:25px}.work-side{grid-template-columns:1fr 1fr;gap:8px}.work-card{min-height:220px}.work-card .caption{left:14px;right:14px;bottom:14px}.work-card .caption strong{font-size:17px}.services-list{grid-template-columns:1fr;margin-top:45px}.service,.service:not(:first-child){border-right:0;border-bottom:1px solid var(--line);padding:21px 0;min-height:0}.service:last-child{border-bottom:0}.service h3{margin-top:35px}.principles{grid-template-columns:1fr;margin-top:45px}.principle,.principle:not(:first-child){border-right:0;border-bottom:1px solid var(--line);padding:22px 0;min-height:0}.principle:last-child{border-bottom:0}.cta{padding:82px 0}.cta-bottom{display:block}.cta-bottom a{display:inline-flex;margin-top:25px}.wa-float{right:14px;bottom:14px}.cta{scroll-margin-top:76px}.footer{display:block}.footer div+div{margin-top:8px}}
+@media(max-width:700px){footer{padding-bottom:96px}.wrap{width:min(calc(100% - 32px),var(--max))}.nav{height:68px}.logo{font-size:14px}.nav-center,.nav-cta{display:none}.mobile-actions{display:flex;gap:2px}.mobile-link{display:inline-flex;padding:9px 6px}.hero{padding:112px 0 70px}.hero-grid,.intro-grid,.services-head,.thinking-grid,.cta-grid{grid-template-columns:1fr;gap:28px}.hero h1{font-size:68px;max-width:7ch}.hero-image{margin-top:18px}.hero-image img{height:470px}.intro,.services,.thinking{padding:82px 0}.work{padding:82px 0 90px}.work-top{display:block}.work-top p{margin-top:20px}.work-grid{margin-top:38px}.work-main{min-height:500px;padding:25px}.work-side{grid-template-columns:1fr 1fr;gap:8px}.work-card{min-height:220px}.work-card .caption{left:14px;right:14px;bottom:14px}.work-card .caption strong{font-size:17px}.services-list{grid-template-columns:1fr;margin-top:45px}.service,.service:not(:first-child){border-right:0;border-bottom:1px solid var(--line);padding:21px 0;min-height:0}.service:last-child{border-bottom:0}.service h3{margin-top:35px}.principles{grid-template-columns:1fr;margin-top:45px}.principle,.principle:not(:first-child){border-right:0;border-bottom:1px solid var(--line);padding:22px 0;min-height:0}.principle:last-child{border-bottom:0}.cta{padding:82px 0}.cta-bottom{display:block}.cta-bottom a{display:inline-flex;margin-top:25px}.wa-float{right:14px;bottom:14px}.cta{scroll-margin-top:76px}.footer{display:block}.footer div+div{margin-top:8px}}
 @media(max-width:460px){.hero h1{font-size:58px}.hero-image img{height:410px}.work-main{min-height:430px}.work-main .jmc{font-size:82px}.work-side{grid-template-columns:1fr}.work-card{min-height:260px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.work-card img{transition:none}}
 </style>
