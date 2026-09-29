@@ -28,6 +28,28 @@ footer{background:var(--ink);color:#fff;padding:28px 0;font-size:10px;color:rgba
 .gallery .photo img{width:100%;height:100%;object-fit:cover}
 @media(max-width:900px){.gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.gallery .photo,.gallery .photo:nth-child(n){grid-column:auto}}
 @media(max-width:560px){.gallery{grid-template-columns:1fr;gap:7px}.gallery .photo,.gallery .photo:nth-child(n){grid-column:auto;border-radius:8px}}
+
+/* FINAL RESPONSIVE QA — portfolio rhythm and mobile filter */
+@media(max-width:700px){
+  .hero{padding-bottom:60px}
+  .hero-grid{gap:28px}
+  .hero-side{font-size:13px;line-height:1.65}
+  .stats{margin-top:40px}
+  .filter{overflow-x:auto;flex-wrap:nowrap;scrollbar-width:none;padding-bottom:2px}
+  .filter::-webkit-scrollbar{display:none}
+  .filter button{flex:0 0 auto}
+  .gallery{gap:8px}
+}
+@media(max-width:560px){
+  .hero{padding-top:58px;padding-bottom:52px}
+  .hero h1{font-size:clamp(54px,16.5vw,72px);line-height:.88}
+  .stats{gap:24px}
+  .end{margin-top:82px;padding:82px 0}
+  .end h2{font-size:clamp(48px,13vw,68px);line-height:.9}
+}
+@media(max-width:360px){
+  .hero h1{font-size:52px}
+}
 </style><script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Portofolio — NUSAKARA CREATIVE","url":"https://nusakaracreative.github.io/nusakaracreative/portfolio/","description":"Arsip visual NUSAKARA CREATIVE: Commercial, Food & Beverage, dan Hunting.","isPartOf":{"@type":"WebSite","name":"NUSAKARA CREATIVE","url":"https://nusakaracreative.github.io/nusakaracreative/"}}</script><style id="nusakara-portfolio-final">
 body{background:#071318;color:#f4f2ed}
 header{background:rgba(7,19,24,.92);border-bottom-color:rgba(244,242,237,.14)}
