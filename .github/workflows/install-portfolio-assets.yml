@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - "NUSAKARA_PORTFOLIO_GITHUB_ASSETS.zip"
+      - ".github/workflows/install-portfolio-assets.yml"
   workflow_dispatch:
 
 permissions:
@@ -20,11 +21,22 @@ jobs:
         run: |
           rm -rf /tmp/nusakara-assets
           mkdir -p /tmp/nusakara-assets
-          unzip -q "NUSAKARA_PORTFOLIO_GITHUB_ASSETS.zip" -d /tmp/nusakara-assets
           mkdir -p assets/portfolio
-          cp -R /tmp/nusakara-assets/commercial assets/portfolio/
-          cp -R /tmp/nusakara-assets/food-beverage assets/portfolio/
-          cp -R /tmp/nusakara-assets/hunting assets/portfolio/
+          if [ -f "NUSAKARA_PORTFOLIO_GITHUB_ASSETS.zip" ]; then
+            unzip -q "NUSAKARA_PORTFOLIO_GITHUB_ASSETS.zip" -d /tmp/nusakara-assets
+            cp -R /tmp/nusakara-assets/commercial assets/portfolio/
+            cp -R /tmp/nusakara-assets/food-beverage assets/portfolio/
+            cp -R /tmp/nusakara-assets/hunting assets/portfolio/
+          fi
+
+      - name: Generate responsive WebP variants
+        run: |
+          find . -type f -name "*.webp" ! -name "*-480.webp" ! -name "*-800.webp" ! -name "*-1200.webp" -print0 | while IFS= read -r -d '' file; do
+            base="${file%.webp}"
+            magick "$file" -strip -resize "480x480>" -quality 78 "${base}-480.webp"
+            magick "$file" -strip -resize "800x800>" -quality 80 "${base}-800.webp"
+            magick "$file" -strip -resize "1200x1200>" -quality 82 "${base}-1200.webp"
+          done
 
       - name: Commit portfolio assets
         run: |
