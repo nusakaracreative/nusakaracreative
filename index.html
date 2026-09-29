@@ -6,12 +6,17 @@
 <title>NUSAKARA CREATIVE — Creative & Digital Growth Partner</title>
 <meta name="description" content="NUSAKARA CREATIVE — Creative & Digital Growth Partner untuk strategi, branding, konten, digital, dan produksi.">
 <meta name="robots" content="index,follow,max-image-preview:large">
-<link rel="canonical" href="https://nusakaracreative.github.io/nusakracreative/">
+<link rel="canonical" href="https://nusakaracreative.github.io/nusakaracreative/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="NUSAKARA CREATIVE — Creative & Digital Growth Partner">
 <meta property="og:description" content="Strategi, kreativitas, dan eksekusi digital untuk brand dan bisnis.">
-<meta property="og:url" content="https://nusakaracreative.github.io/nusakracreative/">
+<meta property="og:url" content="https://nusakaracreative.github.io/nusakaracreative/">
 <meta property="og:site_name" content="NUSAKARA CREATIVE">
+<meta property="og:image" content="https://nusakaracreative.github.io/nusakaracreative/13.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="NUSAKARA CREATIVE — Creative & Digital Growth Partner">
+<meta name="twitter:description" content="Strategi, kreativitas, dan eksekusi digital untuk brand dan bisnis.">
+<meta name="twitter:image" content="https://nusakaracreative.github.io/nusakaracreative/13.webp">
 <meta name="theme-color" content="#f4f2ed">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,6 +28,7 @@
 html{scroll-behavior:smooth;scroll-padding-top:76px}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:"DM Sans",Arial,sans-serif;-webkit-font-smoothing:antialiased}
 a{color:inherit;text-decoration:none}
+a:focus-visible,button:focus-visible{outline:2px solid var(--orange);outline-offset:4px}
 img{display:block;width:100%}
 .wrap{width:min(calc(100% - 72px),var(--max));margin:auto}
 header{height:76px;position:fixed;inset:0 0 auto;z-index:20;background:rgba(244,242,237,.94);backdrop-filter:blur(16px);border-bottom:1px solid rgba(13,33,41,.08)}
@@ -30,7 +36,8 @@ header{height:76px;position:fixed;inset:0 0 auto;z-index:20;background:rgba(244,
 .logo{font:700 15px "Space Grotesk";letter-spacing:-.03em}.logo span{font:400 9px "DM Sans";letter-spacing:.14em;color:var(--muted);margin-left:7px}
 .nav-center{display:flex;gap:32px;font-size:10px;font-weight:700;letter-spacing:.13em}.nav-center a{color:#526168}.nav-center a:hover{color:var(--ink)}
 .nav-cta{font-size:10px;font-weight:700;letter-spacing:.13em;border-bottom:1px solid var(--ink);padding-bottom:5px}
-.mobile-link{display:none;font-size:10px;font-weight:700;letter-spacing:.13em}
+.skip{position:fixed;left:14px;top:14px;z-index:100;transform:translateY(-150%);background:var(--ink);color:#fff;padding:10px;font-size:11px}.skip:focus{transform:none}
+.mobile-actions{display:none;gap:15px;align-items:center}.mobile-link{display:none;font-size:10px;font-weight:700;letter-spacing:.13em}
 .eyebrow{font-size:10px;font-weight:700;letter-spacing:.17em;color:var(--orange);text-transform:uppercase}
 h1,h2,h3{font-family:"Space Grotesk";margin:0;letter-spacing:-.065em;line-height:.92}
 .hero{padding:132px 0 88px}
@@ -99,21 +106,22 @@ h1,h2,h3{font-family:"Space Grotesk";margin:0;letter-spacing:-.065em;line-height
 footer{background:var(--ink);color:rgba(255,255,255,.5);padding:27px 0;font-size:10px}
 .footer{display:flex;justify-content:space-between;gap:20px}.footer b{color:#fff}
 @media(max-width:980px){.wrap{width:min(calc(100% - 48px),var(--max))}.nav-center{gap:18px}.hero-grid{grid-template-columns:1fr 1fr;gap:32px}.hero-image img{height:500px}.services-list{grid-template-columns:repeat(3,1fr)}.service:nth-child(3){border-right:0}.service:nth-child(4),.service:nth-child(5){border-top:1px solid var(--line)}.work-grid{grid-template-columns:1fr}.work-main{min-height:580px}.work-side{grid-template-columns:1fr 1fr;grid-template-rows:1fr}.work-card{min-height:300px}}
-@media(max-width:700px){.wrap{width:min(calc(100% - 32px),var(--max))}.nav-center,.nav-cta{display:none}.mobile-link{display:block}.hero{padding:112px 0 70px}.hero-grid,.intro-grid,.services-head,.thinking-grid,.cta-grid{grid-template-columns:1fr;gap:28px}.hero h1{font-size:68px}.hero-image{margin-top:18px}.hero-image img{height:470px}.intro,.services,.thinking{padding:82px 0}.work{padding:82px 0 90px}.work-top{display:block}.work-top p{margin-top:20px}.work-grid{margin-top:38px}.work-main{min-height:500px;padding:25px}.work-side{grid-template-columns:1fr 1fr;gap:8px}.work-card{min-height:220px}.work-card .caption{left:14px;right:14px;bottom:14px}.work-card .caption strong{font-size:17px}.services-list{grid-template-columns:1fr;margin-top:45px}.service,.service:not(:first-child){border-right:0;border-bottom:1px solid var(--line);padding:21px 0;min-height:0}.service:last-child{border-bottom:0}.service h3{margin-top:35px}.principles{grid-template-columns:1fr;margin-top:45px}.principle,.principle:not(:first-child){border-right:0;border-bottom:1px solid var(--line);padding:22px 0;min-height:0}.principle:last-child{border-bottom:0}.cta{padding:82px 0}.cta-bottom{display:block}.cta-bottom a{display:inline-block;margin-top:25px}.footer{display:block}.footer div+div{margin-top:8px}}
+@media(max-width:700px){.wrap{width:min(calc(100% - 32px),var(--max))}.nav-center,.nav-cta{display:none}.mobile-actions{display:flex}.mobile-link{display:block}.hero{padding:112px 0 70px}.hero-grid,.intro-grid,.services-head,.thinking-grid,.cta-grid{grid-template-columns:1fr;gap:28px}.hero h1{font-size:68px}.hero-image{margin-top:18px}.hero-image img{height:470px}.intro,.services,.thinking{padding:82px 0}.work{padding:82px 0 90px}.work-top{display:block}.work-top p{margin-top:20px}.work-grid{margin-top:38px}.work-main{min-height:500px;padding:25px}.work-side{grid-template-columns:1fr 1fr;gap:8px}.work-card{min-height:220px}.work-card .caption{left:14px;right:14px;bottom:14px}.work-card .caption strong{font-size:17px}.services-list{grid-template-columns:1fr;margin-top:45px}.service,.service:not(:first-child){border-right:0;border-bottom:1px solid var(--line);padding:21px 0;min-height:0}.service:last-child{border-bottom:0}.service h3{margin-top:35px}.principles{grid-template-columns:1fr;margin-top:45px}.principle,.principle:not(:first-child){border-right:0;border-bottom:1px solid var(--line);padding:22px 0;min-height:0}.principle:last-child{border-bottom:0}.cta{padding:82px 0}.cta-bottom{display:block}.cta-bottom a{display:inline-block;margin-top:25px}.footer{display:block}.footer div+div{margin-top:8px}}
 @media(max-width:460px){.hero h1{font-size:60px}.hero-image img{height:410px}.work-main{min-height:430px}.work-main .jmc{font-size:82px}.work-side{grid-template-columns:1fr}.work-card{min-height:260px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.work-card img{transition:none}}
 </style>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"NUSAKARA CREATIVE","url":"https://nusakaracreative.github.io/nusakracreative/","serviceType":["Strategi Kreatif","Branding","Konten","Pemasaran Digital","Produksi Kreatif"],"areaServed":["Bandung","Cimahi","Jawa Barat"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"NUSAKARA CREATIVE","url":"https://nusakaracreative.github.io/nusakaracreative/","serviceType":["Strategi Kreatif","Branding","Konten","Pemasaran Digital","Produksi Kreatif"],"areaServed":["Bandung","Cimahi","Jawa Barat"]}</script>
 </head>
 <body>
 <header><div class="wrap nav">
 <a class="logo" href="./">NUSAKARA <span>CREATIVE</span></a>
 <nav class="nav-center" aria-label="Navigasi utama"><a href="#karya">KARYA</a><a href="#layanan">LAYANAN</a><a href="#cara-kerja">CARA KERJA</a><a href="#kontak">KONTAK</a></nav>
 <a class="nav-cta" href="https://wa.me/6282312493330?text=Halo%20NUSAKARA%20CREATIVE%2C%20saya%20ingin%20membahas%20proyek%20kreatif%20dan%20digital.">MULAI PROYEK ↗</a>
-<a class="mobile-link" href="portfolio/">PORTOFOLIO ↗</a>
+<div class="mobile-actions"><a class="mobile-link" href="#karya">KARYA</a><a class="mobile-link" href="#layanan">LAYANAN</a><a class="mobile-link" href="#kontak">KONTAK</a></div>
 </div></header>
 
-<main>
+<a class="skip" href="#main">Lewati ke konten utama</a>
+<main id="main">
 <section class="hero"><div class="wrap hero-grid">
 <div>
 <div class="eyebrow">CREATIVE & DIGITAL GROWTH PARTNER</div>
@@ -122,7 +130,7 @@ footer{background:var(--ink);color:rgba(255,255,255,.5);padding:27px 0;font-size
 <div class="hero-actions"><a href="#karya">LIHAT KARYA ↓</a><small>BANDUNG · JAWA BARAT</small></div>
 </div>
 <figure class="hero-image">
-<img src="13.webp" alt="Karya Commercial NUSAKARA — fotografi komersial">
+<img src="13.webp" alt="Karya Commercial NUSAKARA — fotografi komersial" fetchpriority="high">
 <figcaption><b>COMMERCIAL / 13</b><span>ARSIP VISUAL NUSAKARA</span></figcaption>
 </figure>
 </div></section>
