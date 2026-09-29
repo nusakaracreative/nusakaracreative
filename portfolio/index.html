@@ -22,6 +22,12 @@ footer{background:var(--ink);color:#fff;padding:28px 0;font-size:10px;color:rgba
 @media(max-width:900px){.wrap{width:min(calc(100% - 40px),var(--max))}.hero-grid{grid-template-columns:1fr}.hero-side{margin:25px 0 0}.gallery{grid-template-columns:repeat(6,minmax(0,1fr))}.photo,.photo:nth-child(7n+1),.photo:nth-child(7n+5){grid-column:span 3}.photo:nth-child(7n+3){grid-column:span 2}}
 @media(max-width:560px){footer{padding-bottom:96px}.wrap{width:min(calc(100% - 30px),var(--max))}.nav{height:68px}.hero{padding-top:70px}.hero h1{font-size:65px}.stats{gap:25px;flex-wrap:wrap}.gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}.photo,.photo:nth-child(7n+1),.photo:nth-child(7n+5),.photo:nth-child(7n+3){grid-column:span 1}.photo:nth-child(5n+1){grid-column:span 2}.end-row{display:block}.btn{display:inline-flex;margin-top:20px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.photo img{transition:none}.photo:hover img{transform:none}}
+/* FINAL PORTFOLIO GRID FIX — filter-safe responsive layout */
+.gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;align-items:stretch;grid-auto-flow:row}
+.gallery .photo,.gallery .photo:nth-child(n){grid-column:auto;min-width:0;aspect-ratio:4/3}
+.gallery .photo img{width:100%;height:100%;object-fit:cover}
+@media(max-width:900px){.gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.gallery .photo,.gallery .photo:nth-child(n){grid-column:auto}}
+@media(max-width:560px){.gallery{grid-template-columns:1fr;gap:7px}.gallery .photo,.gallery .photo:nth-child(n){grid-column:auto;border-radius:8px}}
 </style><script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Portofolio — NUSAKARA CREATIVE","url":"https://nusakaracreative.github.io/nusakaracreative/portfolio/","description":"Arsip visual NUSAKARA CREATIVE: Commercial, Food & Beverage, dan Hunting.","isPartOf":{"@type":"WebSite","name":"NUSAKARA CREATIVE","url":"https://nusakaracreative.github.io/nusakaracreative/"}}</script><style id="nusakara-portfolio-final">
 body{background:#071318;color:#f4f2ed}
 header{background:rgba(7,19,24,.92);border-bottom-color:rgba(244,242,237,.14)}
