@@ -32,7 +32,7 @@ footer{background:var(--ink);color:#fff;padding:28px 0;font-size:10px;color:rgba
 </div></div></section>
 <a class="wa-float" href="https://wa.me/6282312493330?text=Halo%20NUSAKARA%20CREATIVE%2C%20saya%20ingin%20membahas%20kebutuhan%20digital%20marketing%20dan%20social%20media%20untuk%20bisnis%20saya.%20Sumber:%20Portfolio." data-wa-source="portfolio" aria-label="Hubungi NUSAKARA CREATIVE melalui WhatsApp">CHAT PROJECT ↗</a><section class="end"><div class="wrap"><div class="label" style="color:#fff">PROYEK BERIKUTNYA</div><h2>Kalau pekerjaannya belum ada di sini, mungkin bisa kita buat.</h2><div class="end-row"><p>Ceritakan kebutuhan visual, branding, konten, atau digital Anda.</p><a class="btn" href="https://wa.me/6282312493330?text=Halo%20NUSAKARA%20CREATIVE%2C%20saya%20ingin%20membahas%20proyek.">BICARAKAN PROYEK ↗</a></div></div></section></main>
 <footer><div class="wrap"><strong>NUSAKARA CREATIVE</strong> — Bandung · Cimahi · Jawa Barat · © 2026</div></footer>
-<script>
+<script>document.querySelectorAll('a[data-wa-source]').forEach(link=>link.addEventListener('click',()=>{window.dataLayer=window.dataLayer||[];window.dataLayer.push({event:'whatsapp_click',whatsapp_source:link.dataset.waSource});}));
 const buttons=[...document.querySelectorAll('.filter button')],photos=[...document.querySelectorAll('.photo')];
 buttons.forEach(b=>b.addEventListener('click',()=>{buttons.forEach(x=>{x.classList.remove('active');x.setAttribute('aria-pressed','false')});b.classList.add('active');b.setAttribute('aria-pressed','true');const f=b.dataset.filter;photos.forEach(p=>p.classList.toggle('hidden',f!=='all'&&p.dataset.cat!==f));}));
 </script></body></html>
