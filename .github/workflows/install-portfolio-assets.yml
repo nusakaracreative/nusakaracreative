@@ -38,9 +38,9 @@ jobs:
         run: |
           find . -type f -name "*.webp" ! -name "*-480.webp" ! -name "*-800.webp" ! -name "*-1200.webp" -print0 | while IFS= read -r -d '' file; do
             base="${file%.webp}"
-            magick "$file" -strip -resize "480x480>" -quality 78 "${base}-480.webp"
-            magick "$file" -strip -resize "800x800>" -quality 80 "${base}-800.webp"
-            magick "$file" -strip -resize "1200x1200>" -quality 82 "${base}-1200.webp"
+            convert "$file" -strip -resize "480x480>" -quality 78 "${base}-480.webp"
+            convert "$file" -strip -resize "800x800>" -quality 80 "${base}-800.webp"
+            convert "$file" -strip -resize "1200x1200>" -quality 82 "${base}-1200.webp"
           done
 
       - name: Commit portfolio assets
