@@ -21,4 +21,5 @@ jobs:
             https://nusakaracreative.github.io/nusakaracreative/portfolio/
             https://nusakaracreative.github.io/nusakaracreative/work/jaya-mediacell/
           uploadArtifacts: true
+          configPath: ./lighthouserc.json
           temporaryPublicStorage: true
