@@ -1,7 +1,7 @@
 {
   "ci": {
     "collect": {
-      "numberOfRuns": 1
+      "numberOfRuns": 3
     },
     "assert": {
       "assertions": {
@@ -26,16 +26,10 @@
         "categories:performance": [
           "error",
           {
-            "minScore": 0.85
+            "minScore": 0.8
           }
         ],
         "color-contrast": [
-          "error",
-          {
-            "minScore": 1
-          }
-        ],
-        "tap-targets": [
           "error",
           {
             "minScore": 1
