@@ -20,7 +20,7 @@ header,.nav{height:var(--header-h)}
 @media(max-width:900px){
 :root{--site-gutter:20px;--section-y:88px;--grid-gap:10px}
 .wrap{width:min(calc(100% - (var(--site-gutter) * 2)),var(--max))}
-.hero-grid,.section-grid,.statement-grid,.cap-head,.work-head,.process-grid,.cta-grid,.closing-grid{grid-template-columns:1fr;gap:28px}
+.home-page .hero-grid,.section-grid,.statement-grid,.cap-head,.work-head,.process-grid,.cta-grid,.closing-grid{grid-template-columns:1fr;gap:28px}
 .hero h1,.hero-title{font-size:clamp(68px,14vw,112px)}
 .statement h2,.cap-head h2,.work-head h2,.process h2,.cta h2,.section h2,.baseline h2,.system h2,.closing h2,.proof-head h2{font-size:clamp(52px,10vw,82px)}
 .hero-meta,.meta-grid{margin-top:48px}
