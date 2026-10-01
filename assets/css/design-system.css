@@ -38,3 +38,12 @@ header,.nav{height:var(--header-h)}
 .gallery{column-gap:8px}
 .photo{margin-bottom:8px}
 }
+
+/* Responsive composition safeguards: page hierarchy stays consistent without forced word breaks. */
+@media(max-width:560px){
+  .hero-title{font-size:clamp(57px,17vw,82px);line-height:.87}
+  .hero h1{font-size:clamp(54px,15vw,76px);line-height:.9}
+  .proof-head h2{font-size:clamp(42px,11vw,62px);line-height:.94}
+  .section h2,.baseline h2,.system h2,.process h2,.role h2,.closing h2{font-size:clamp(48px,13vw,68px);line-height:.92}
+  .steps{gap:1px}
+}
