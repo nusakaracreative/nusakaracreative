@@ -6,6 +6,7 @@ header,.nav{height:var(--header-h)}
 .brand img{width:34px;height:34px;flex:0 0 34px}
 .brand strong,.brand-name{font-size:12px}
 .hero-grid,.section-grid,.statement-grid,.cap-head,.work-head,.process-grid,.cta-grid,.closing-grid{grid-template-columns:minmax(0,20%) minmax(0,80%);gap:40px}
+.home-page .hero-grid{grid-template-columns:minmax(0,1.18fr) minmax(340px,.82fr);gap:clamp(42px,6vw,88px)}
 .hero h1,.hero-title{font-size:clamp(76px,9.5vw,148px);line-height:.9}
 .statement h2,.cap-head h2,.work-head h2,.process h2,.cta h2,.section h2,.baseline h2,.system h2,.closing h2,.proof-head h2{font-size:clamp(56px,7vw,100px);line-height:.94}
 .section,.statement,.work,.process,.role,.data,.execution,.system,.baseline,.capabilities,.cta,.closing{padding-block:var(--section-y)}
