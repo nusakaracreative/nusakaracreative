@@ -47,3 +47,11 @@ header,.nav{height:var(--header-h)}
   .section h2,.baseline h2,.system h2,.process h2,.role h2,.closing h2{font-size:clamp(48px,13vw,68px);line-height:.92}
   .steps{gap:1px}
 }
+
+
+/* Global shell normalization: every public page uses the same header/footer behavior. */
+header{position:sticky!important;top:0;left:auto;right:auto;z-index:50}
+footer,.footer{background:var(--ink)!important;color:#fff!important;border-top:0!important}
+footer .footer-row,.footer .footer-row{color:#fff}
+footer .footer-row strong,.footer .footer-row strong,footer a,.footer a{color:#fff}
+footer small,.footer small{color:rgba(255,255,255,.55)!important}
