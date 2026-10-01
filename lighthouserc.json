@@ -36,7 +36,7 @@
           }
         ],
         "errors-in-console": [
-          "warn",
+          "error",
           {
             "maxLength": 0
           }
