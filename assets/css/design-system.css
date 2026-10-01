@@ -1,0 +1,40 @@
+/* NUSAKARA CREATIVE — shared visual system
+   Normalizes grid, spacing, typography, navigation and responsive rhythm. */
+:root{--max:1280px;--site-gutter:40px;--section-y:112px;--grid-gap:12px;--header-h:76px}
+.wrap{width:min(calc(100% - (var(--site-gutter) * 2)),var(--max))}
+header,.nav{height:var(--header-h)}
+.brand img{width:34px;height:34px;flex:0 0 34px}
+.brand strong,.brand-name{font-size:12px}
+.hero-grid,.section-grid,.statement-grid,.cap-head,.work-head,.process-grid,.cta-grid,.closing-grid{grid-template-columns:minmax(0,20%) minmax(0,80%);gap:40px}
+.hero h1,.hero-title{font-size:clamp(76px,9.5vw,148px);line-height:.9}
+.statement h2,.cap-head h2,.work-head h2,.process h2,.cta h2,.section h2,.baseline h2,.system h2,.closing h2,.proof-head h2{font-size:clamp(56px,7vw,100px);line-height:.94}
+.section,.statement,.work,.process,.role,.data,.execution,.system,.baseline,.capabilities,.cta,.closing{padding-block:var(--section-y)}
+.cards,.baseline-grid,.system-grid,.system-cards,.data-grid,.exec-grid,.feature,.steps{gap:var(--grid-gap)}
+.cards{margin-top:56px}
+.card,.system-card,.platform,.exec,.data-card,.step{padding:28px}
+.hero-meta,.meta-grid{margin-top:64px}
+.case-link,.btn,.cta-btn,.closing a{min-height:44px}
+.footer{padding-block:28px 36px}
+.gallery{column-gap:var(--grid-gap)}
+.photo{margin-bottom:var(--grid-gap)}
+@media(max-width:900px){
+:root{--site-gutter:20px;--section-y:88px;--grid-gap:10px}
+.wrap{width:min(calc(100% - (var(--site-gutter) * 2)),var(--max))}
+.hero-grid,.section-grid,.statement-grid,.cap-head,.work-head,.process-grid,.cta-grid,.closing-grid{grid-template-columns:1fr;gap:28px}
+.hero h1,.hero-title{font-size:clamp(68px,14vw,112px)}
+.statement h2,.cap-head h2,.work-head h2,.process h2,.cta h2,.section h2,.baseline h2,.system h2,.closing h2,.proof-head h2{font-size:clamp(52px,10vw,82px)}
+.hero-meta,.meta-grid{margin-top:48px}
+}
+@media(max-width:560px){
+:root{--site-gutter:14px;--section-y:80px;--grid-gap:8px;--header-h:68px}
+.wrap{width:calc(100% - (var(--site-gutter) * 2))}
+.brand img{width:32px;height:32px;flex-basis:32px}
+.brand strong,.brand-name{font-size:11px}
+.hero h1,.hero-title{font-size:clamp(56px,17vw,82px);line-height:.88}
+.statement h2,.cap-head h2,.work-head h2,.process h2,.cta h2,.section h2,.baseline h2,.system h2,.closing h2,.proof-head h2{font-size:clamp(48px,14vw,72px);line-height:.92}
+.hero-grid,.section-grid,.statement-grid,.cap-head,.work-head,.process-grid,.cta-grid,.closing-grid{gap:22px}
+.card,.system-card,.platform,.exec,.data-card,.step{padding:24px}
+.hero-meta,.meta-grid{margin-top:40px}
+.gallery{column-gap:8px}
+.photo{margin-bottom:8px}
+}
