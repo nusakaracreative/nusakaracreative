@@ -1,6 +1,6 @@
 /* NUSAKARA CREATIVE — shared visual system
    Normalizes grid, spacing, typography, navigation and responsive rhythm. */
-:root{--max:1280px;--site-gutter:40px;--section-y:112px;--grid-gap:12px;--header-h:76px}
+:root{--max:1380px;--site-gutter:40px;--section-y:112px;--grid-gap:12px;--header-h:78px}
 .wrap{width:min(calc(100% - (var(--site-gutter) * 2)),var(--max))}
 header,.nav{height:var(--header-h)}
 .brand img{width:34px;height:34px;flex:0 0 34px}
