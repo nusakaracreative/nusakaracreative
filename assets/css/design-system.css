@@ -62,3 +62,28 @@ footer,.footer{background:var(--ink)!important;color:#fff!important;border-top:0
 footer .footer-row,.footer .footer-row{color:#fff}
 footer .footer-row strong,.footer .footer-row strong,footer a,.footer a{color:#fff}
 footer small,.footer small{color:rgba(255,255,255,.55)!important}
+
+
+/* NUSAKARA Brand Kit v2026 — final global shell rules */
+:root{
+  --paper:#f3f0e9;
+  --ink:#0D2129;
+  --deep:#033040;
+  --orange:#FA3E0B;
+  --red:#C6492B;
+  --muted:#556267;
+  --line:rgba(13,33,41,.18);
+  --soft:#ebe8e0;
+}
+body{font-family:"Inter",Arial,sans-serif}
+h1,h2,h3,h4,.brand strong,.brand-name{font-family:"Manrope",Arial,sans-serif}
+.brand{display:flex;align-items:center;min-width:0}
+.brand img{width:190px!important;height:auto!important;max-width:190px;object-fit:contain;object-position:left center;flex:0 0 auto}
+.brand:focus-visible img{outline:2px solid var(--orange);outline-offset:4px}
+.navlinks a,.home,.back,.navcta,.eyebrow,.meta,.index,.toolbar-label,.filters button,.case-link,.btn,.cta-btn{font-family:"Inter",Arial,sans-serif}
+img{max-width:100%}
+@media(max-width:560px){
+  .brand img{width:155px!important;max-width:155px}
+}
+/* Keep the editorial system deliberate: dark foundation, restrained accent, generous negative space. */
+body{background:var(--paper)}
